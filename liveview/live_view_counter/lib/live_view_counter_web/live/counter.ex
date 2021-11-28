@@ -12,7 +12,7 @@ defmodule LiveViewCounterWeb.Counter do
   end
 
   def handle_event("inc", _, socket) do
-    {:noreply, assign(socket, :val, count.incr()}
+    {:noreply, assign(socket, :val, count.incr())}
   end
 
   def handle_event("dec", _value, socket) do
