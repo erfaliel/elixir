@@ -6,17 +6,17 @@ defmodule LiveViewCounterWeb.Counter do
   @topic Count.topic
 
   def mount(_params, _session, socket) do
-    PubSub.subscribe(LiveViewCounter.Pubsub, @topic) # subscribe to the channel
+    PubSub.subscribe(LiveViewCounter.PubSub, @topic) # subscribe to the channel
     
-    {:ok, assign(socket, :val, count.current())}
+    {:ok, assign(socket, :val, Count.current())}
   end
 
   def handle_event("inc", _, socket) do
-    {:noreply, assign(socket, :val, count.incr())}
+    {:noreply, assign(socket, :val, Count.incr())}
   end
 
   def handle_event("dec", _value, socket) do
-    {:noreply, ssign(socket, :val, count.decr())}
+    {:noreply, assign(socket, :val, Count.decr())}
   end
 
   def handle_info({:count, count}, socket) do
