@@ -35,4 +35,4 @@ Run the App
 Start the Phoenix server by running the command:
 
 ```mix phx.server```
-Now you can visit (:/localhost:4000) in your web browser.
+Now you can visit (http://localhost:4000) in your web browser.
