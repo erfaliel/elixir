@@ -28,11 +28,11 @@ ownload the Dependencies
 # Install
 Install the dependencies by running the command:
 
-mix setup
+```mix setup```
 It will take a few seconds to download the dependencies depending on the speed of your internet connection; be patient.
 
 Run the App
 Start the Phoenix server by running the command:
 
-mix phx.server
-Now you can visit localhost:4000 in your web browser.
+```mix phx.server```
+Now you can visit (:/localhost:4000) in your web browser.
