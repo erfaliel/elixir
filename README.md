@@ -1,6 +1,9 @@
 # elixir
 elixr dev training
 
+# ref
+(https://github.com/dwyl/phoenix-liveview-counter-tutorial)
+
 # before
 Before you start working through the tutorial, you will need:
 
