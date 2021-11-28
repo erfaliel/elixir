@@ -16,7 +16,7 @@ defmodule LiveViewCounterWeb.Counter do
   end
 
   def handle_event("dec", _value, socket) do
-    {:noreply, ssign(socket, :val, count.decr()}
+    {:noreply, ssign(socket, :val, count.decr())}
   end
 
   def handle_info({:count, count}, socket) do
