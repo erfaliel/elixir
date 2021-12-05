@@ -75,7 +75,7 @@ USER "${USER}"
 # copy release executables
 COPY --from=build --chown="${USER}":"${USER}" /app/_build/"${MIX_ENV}"/rel/live_view_counter ./
 
-ENTRYPOINT ["bin/saturn"]
+ENTRYPOINT ["bin/live_view_counter"]
 
 CMD ["start"]
 
