@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: el-kube-deployment
+  labels:
+    app: el-kube
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: el-kube
+  template:
+    metadata:
+      name: el-kube
+      labels:
+        app: el-kube
+    spec:
+      containers:
+      - name: el-kube
+        image: erfaliel/live-view-counter
+        env:
+          - name: POOL_SIZE
+            value: "2"
+          - name: PORT
+            value: "4001"
+          - name: SECRET_KEY_BASE
+            value: "ghc4RgUC+GiVO/suc3/tYp6u7aXkwJEnYq359+nbaAmJQWkjzjlUSdMPGzOgZWuY"

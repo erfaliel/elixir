@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: envar-demo
+  labels:
+    purpose: demonstrate-envars
+spec:
+  containers:
+  - name: envar-demo-container
+    image: erfaliel/live-view-counter 
+    env:
+    - name: POOL_SIZE
+      value: "2"
+    - name: PORT
+      value: "4001"
+    - name: SECRET_KEY_BASE
+      value: "mySuperSecretKey"
