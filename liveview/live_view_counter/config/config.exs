@@ -9,7 +9,7 @@ import Config
 
 # Configures the endpoint
 config :live_view_counter, LiveViewCounterWeb.Endpoint,
-  url: [host: "my-website.fr"],
+  url: [host: "localhost"],
   render_errors: [view: LiveViewCounterWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: LiveViewCounter.PubSub,
   live_view: [signing_salt: "WtnJ9GUv3QIYnqTi/D5dblrMqFdl3bVv"]
